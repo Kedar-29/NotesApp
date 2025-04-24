@@ -36,13 +36,13 @@ const NoteForm = () => {
         </div>
         <div className="mb-3">
           <label htmlFor="content" className="form-label">Content</label>
-          <input
-            type="text"
+          <textarea
             id="content"
             className="form-control"
             placeholder="Enter content"
             value={content}
             onChange={(e) => setContent(e.target.value)}
+            rows="4"  // Adjust the number of rows based on your preference
           />
         </div>
         <button type="submit" className="btn btn-primary w-100">Add Note</button>
